@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+.container {
+  max-width: 1060px;
+  min-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.container__cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.card {
+  width: 300px;
+  background-color: #999999;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 3px solid gold;
+  box-shadow: 15px 15px 20px #339999;
+}
+img {
+  width: 280px;
+  border-radius: 10%;
+  border: 3px solid #333333;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.card__name,
+.card__planet {
+  text-align: start;
+}
+
+.card__like {
+  background-color: transparent;
+  border: none;
+}
+.pagination {
+  background-color: pink;
+  border-radius: 20px;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, -10%);
+  display: flex;
+  align-content: center;
+}
+.pagination__number,
+.pagination__button {
+  width: 60px;
+  height: 60px;
+}
+.pagination__button {
+  background-color: transparent;
+  border: none;
+}
+.pagination__number {
+  font-size: 50px;
+  background-color: bisque;
+  line-height: 60px;
+  border-radius: 50%;
+}
+.search {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 10px;
+}
+.search__input {
+  height: 25px;
+  width: 250px;
+  border: 3px solid black;
+  border-right: none;
+  outline: none;
+}
+.search__button_delete {
+  height: 33px;
+  width: 25px;
+  border: 3px solid black;
+  border-left: none;
+  background-color: white;
+}
+select {
+  width: 190px;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #444;
+}
